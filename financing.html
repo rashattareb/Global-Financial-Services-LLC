@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financing Options - Global Financial Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/calculator.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Financing Options</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="financing.html">Financing Options</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="financing-info">
+        <h2>Finance Calculator</h2>
+        <form id="financeForm" onsubmit="return calculatePayment()">
+            <label for="loanAmount">Loan Amount ($):</label><br>
+            <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+
+            <label for="interestRate">Annual Interest Rate (%):</label><br>
+            <input type="number" id="interestRate" name="interestRate" step="0.01" required><br><br>
+
+            <label for="loanTerm">Loan Term (Years):</label><br>
+            <input type="number" id="loanTerm" name="loanTerm" required><br><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <h3 id="monthlyPayment"></h3>
+    </section>
+    <footer>
+        <p>Follow us on:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        <p>&copy; 2024 Global Financial Services</p>
+    </footer>
+</body>
+</html>
