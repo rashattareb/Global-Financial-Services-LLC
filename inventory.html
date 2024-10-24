@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Global Financial Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/inventory.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Our Inventory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="financing.html">Financing Options</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inventory-list">
+        <h2>Explore Our Vehicles</h2>
+        <input type="text" id="searchInput" placeholder="Search for cars..." onkeyup="searchCars()">
+        <div id="carsContainer">
+            <!-- Cars will be dynamically loaded here -->
+        </div>
+    </section>
+    <footer>
+        <p>Follow us on:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        <p>&copy; 2024 Global Financial Services</p>
+    </footer>
+</body>
+</html>
